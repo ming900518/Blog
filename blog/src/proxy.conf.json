@@ -1,0 +1,9 @@
+{
+  "/service": {
+    "target": "http://localhost:8080/",
+    "pathRewrite": {
+      "^/service": ""
+    },
+    "secure": true
+  }
+}
