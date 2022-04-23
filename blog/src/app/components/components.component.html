@@ -2,38 +2,30 @@
     <div class="page-header clear-filter" filter-color="pink">
         <div class="page-header-image rellax-header" data-rellax-speed="-7"
              style="background-image: url('assets/img/header.webp');">
-
         </div>
         <div class="container">
             <div class="content-center brand">
-                <h1 class="h1-seo">開發隨筆</h1>
-                <h3>Development Essay</h3>
-                <h5>by <a href="https://about.mingchang.tw">Ming Chang</a></h5>
+                <h1 class="title">開發隨筆</h1>
+                <h3 class="title">Development Essay</h3>
+                <h5 class="title">by <a href="https://about.mingchang.tw">Ming Chang</a></h5>
             </div>
         </div>
     </div>
-
     <div class="main">
-<!--        <div class="section">-->
-<!--            <div class="container">-->
-<!--                <div class="row">-->
-<!--                    <div class="col-xs-12 col-md-12 ml-auto col-xl-10 mr-auto">-->
-<!--                        <div class="">-->
-
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
         <div class="section section-examples" data-background-color="black">
-            <div class="space-50"></div>
             <div class="container text-center">
                 <div class="row">
                     <div class="col-xl-6 col-md-10 col-xs-12 mr-auto ml-auto">
-                        <a [routerLink]="['/content']">
-                            <img src="assets/img/landing.jpg" alt="Image" class="img-raised">
-                        </a>
-                        <a [routerLink]="['/content']" class="btn btn-simple btn-primary btn-round">View More</a>
+                        <div class="card" data-background-color="light-black">
+                            <div class="card-body">
+                                <h4 class="text-white">文章標題</h4>
+                                <h5 class="text-white">文章內容</h5>
+                            </div>
+                            <div class="card-footer">
+                                <a [routerLink]="['/content']" class="btn btn-simple btn-primary btn-round text-white">繼續閱讀
+                                    Read More</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
