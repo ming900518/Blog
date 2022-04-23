@@ -4,12 +4,12 @@ import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule, Routes} from '@angular/router';
 
 import {ComponentsComponent} from './components/components.component';
-import {NucleoiconsComponent} from './components/nucleoicons/nucleoicons.component';
+import {ContentComponent} from './components/content/content.component';
 
 const routes: Routes = [
     {path: '', redirectTo: 'index', pathMatch: 'full'},
     {path: '', component: ComponentsComponent},
-    {path: 'nucleoicons', component: NucleoiconsComponent}
+    {path: 'content', component: ContentComponent}
 ];
 
 @NgModule({
