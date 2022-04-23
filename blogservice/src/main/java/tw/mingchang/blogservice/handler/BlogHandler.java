@@ -22,7 +22,21 @@ public class BlogHandler {
     }
 
     public Flux<Articles> list() {
-        return articlesRepository.findAll();
+        return articlesRepository
+                .findAll()
+                .flatMap(data ->
+                        Mono.just(new Articles
+                                (
+                                        data.id(),
+                                        data.title(),
+                                        data.content()
+                                                .replaceAll("<(?:.|\n)*?>", "")
+                                                .replaceAll("\n", "")
+                                                .substring(0, 200) + "...",
+                                        data.updateDate()
+                                )
+                        )
+                );
     }
 
     public Mono<Articles> content(String id) {
