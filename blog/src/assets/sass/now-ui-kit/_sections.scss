@@ -95,7 +95,7 @@
     }
 
     &[filter-color="pink"]{
-        @include linear-gradient(rgba($black-color,.20), rgba(232, 122, 144, 0.8));
+        @include linear-gradient(rgba($black-color,.20), rgba(232, 122, 144, 0.6));
     }
 
     .container{
